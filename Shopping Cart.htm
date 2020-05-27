@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title> Shop Books</title>
+        <link rel="stylesheet" type="text/css" href="Style.css"> 
+        <script src="store.js" async></script>
+        <ul>
+          <li><a href="#checkout">Wishlist</a></li>
+          <li><a href="shopping cart.htm">Purchase History</a></li>
+          <li><a href="#feedback">Contact</a></li>
+          <li><a href="#sale">Promotion</a></li>
+          <li><a href="shopping cart.htm">Home</a></li>
+          
+        </ul>   <br>
+  </head>
+    
+<body>
+    
+  <h3>Buy Study Materials |
+      New and Second-Hand Books <br><br>
+      <a href="shopping cart.htm"> <img src="images/book.jpg"><br></a>
+    </h3>
+
+ <div class="icon"><a href="#checkout">Cart
+    <img src="images/cart.png"></a>
+ </div>
+
+  <h3>Shop Books:</h3>
+<div id="collection">
+  <div class="book">
+    <img class="shop-item-image" src="images/harry potter.jpg" width="auto" height="300"><br>
+    <div class="shop-item-details">
+    <span class="shop-item-title">Harry Potter (New Condition)</span><br>
+    <span class ="shop-item-price">$69</span><br>
+    <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+  </div>
+  </div>
+<hr>
+ <div class="book">
+    <img class="shop-item-image" src="images/thehungergamestrilogy.jpg" width="auto" height="300"><br>
+    <div class="shop-item-details">
+    <span class="shop-item-title">The Hunger Games Trilogy (Bundle)</span><br>
+    <span class= "shop-item-price"> $99</span><br>
+    <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+    </div>
+  </div>
+<hr>
+  <div class="book">
+    <div class="shop-item-details">
+    <img class="shop-item-image" src="images/gameofthrones.jpg" width="auto" height="300"><br>
+   <span class="shop-item-title">A Song of Ice and Fire (Used) </span><br>
+   <span class= "shop-item-price">$35</span><br>
+   <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+    </div>
+  </div>
+</div><br><br>
+
+<h3>Checkout:</h3>
+
+<div id="checkout">
+
+  <div class="cart-row">
+    <span class="cart-item cart-header cart-column">ITEM</span>
+    <span class="cart-price cart-header cart-column">PRICE</span>
+    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+</div>
+<div class="cart-items">
+</div>
+<div class="cart-total">
+    <strong class="cart-total-title">Total</strong>
+    <span class="cart-total-price">$0</span>
+</div>
+
+<div id="shipping">
+<form action="shopping cart.htm">
+<label for="fname">Shipping Address:</label>
+<input type="text" id="place" placeholder="Your address here">
+</form>
+</div>
+
+<button class="btn btn-primary btn-purchase" type="button">Purchase</button>
+</div><br><br>
+
+<div id="sale">
+<h3>Books on SALE !!!:</h3>
+<img class="shop-item-image" src="images/sale.png" width="auto" height="300"><br>
+</div><br>
+
+<h3>Feedback:</h3>
+
+<div id="feedback">
+  <form action="shopping cart.htm">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<h4>2020-BookStore | Redfern, NSW</h4>
+
+</body>
+</html>
