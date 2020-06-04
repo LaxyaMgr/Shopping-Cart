@@ -20,9 +20,10 @@
       <a href="shopping cart.htm"> <img src="images/book.jpg"><br></a>
     </h3>
 
- <div class="icon"><a href="#checkout">Cart
-    <img src="images/cart.png"></a>
- </div>
+ <div class="icon">  
+ <a href="#checkout">
+ <img src="images/cart.png"><input type="text" id="counter" value="0"></input></a>
+</div>
 
   <h3>Shop Books:</h3>
 <div id="collection">
@@ -31,7 +32,7 @@
     <div class="shop-item-details">
     <span class="shop-item-title">Harry Potter (New Condition)</span><br>
     <span class ="shop-item-price">$69</span><br>
-    <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+    <button class="btn btn-primary shop-item-button" onclick="increasecounter()" id="counter" type="button" value="0">Add to Cart</button>
   </div>
   </div>
 <hr>
@@ -40,16 +41,16 @@
     <div class="shop-item-details">
     <span class="shop-item-title">The Hunger Games Trilogy (Bundle)</span><br>
     <span class= "shop-item-price"> $99</span><br>
-    <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+    <button class="btn btn-primary shop-item-button" onclick="increasecounter()" id="counter" type="button" value="0">Add to Cart</button>
     </div>
   </div>
 <hr>
   <div class="book">
     <div class="shop-item-details">
-    <img class="shop-item-image" src="images/GameofThrones.jpg" width="auto" height="300"><br>
+    <img class="shop-item-image" src="images/GameOfThrones.jpg" width="auto" height="300"><br>
    <span class="shop-item-title">A Song of Ice and Fire (Used) </span><br>
    <span class= "shop-item-price">$35</span><br>
-   <button class="btn btn-primary shop-item-button" type="button">Add to Cart</button>
+   <button class="btn btn-primary shop-item-button" onclick="increasecounter()" id="counter" type="button" value="0">Add to Cart</button>
     </div>
   </div>
 </div><br><br>
