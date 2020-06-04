@@ -39,6 +39,7 @@ function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
+    decreasecounter()
 }
 
 function quantityChanged(event) {
@@ -67,6 +68,7 @@ function addItemToCart(title, price, imageSrc) {
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already added to the cart')
+            decreasecounter()
             return
         }
     }
@@ -100,4 +102,14 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+var i = 0;
+function increasecounter() {
+    document.getElementById('counter').value = ++i;
+}
+
+var i = 0;
+function decreasecounter() {
+    document.getElementById('counter').value = --i;
 }
